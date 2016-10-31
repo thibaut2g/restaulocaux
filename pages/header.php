@@ -31,7 +31,7 @@
              <li><a href="accueil.php">Accueil</a></li>   
              <li><a href="restaurateurs.php">Restaurateurs</a></li>   
              <li> <a href="agriculteurs.php">Agriculteurs</a> </li>   
-              <li><a href="profils.php">Profil</a></li>
+              <li><a href="profil.php">Profil</a></li>
               <li><a href="about.php">A propos</a></li>
 
       </ul>
@@ -39,7 +39,7 @@
       <ul class="side-nav">
               <li><a href="restaurateurs.php">Restaurateurs</a></li>
               <li> <a href="#/agriculteurs.php">Agriculteurs</a> </li>
-              <li><a href="#/profils">Profil</a> </li>
+              <li><a href="#/profil.php">Profil</a> </li>
               <li><a href="#/about.php">A propos</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
