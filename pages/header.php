@@ -14,14 +14,16 @@
   <link href="css/style.css" type="text/css" rel="stylesheet"/>
 
   <!-- JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/map.js"></script>
+  <script src="js/controllers/map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4ItKYWgc3mH1TZBJ_vlKRcz6vWYVU_3s"></script>
-  <script language="javascript" type="text/javascript" src="js/map.js"></script>
 
 </head>
 
-<body>
+<body ng-app = 'MonApp'>
  <nav class="transparent navbar-fixed indigo darken-3" role="navigation" id="scroll">
   <a id="logo-container" href="#" class="brand-logo scrollspy"><span>Restaulocaux</span></a>
     <div class="nav-wrapper container">

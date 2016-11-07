@@ -11,4 +11,6 @@
 
 	 
 </div>
-<div id="map-canvas"></div>
+<div ng-controller = "MapCtrl">
+  <div id="map-canvas"></div>
+</div>
