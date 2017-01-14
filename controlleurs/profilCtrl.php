@@ -3,7 +3,6 @@
     $mail = $_SESSION['mail'];
     $nom = $_SESSION['nom'];
     $profil = $_SESSION['profil'];
-
  ?>
 
  <style>
