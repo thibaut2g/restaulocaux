@@ -21,7 +21,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
 <script type="text/javascript">
-    var text = '<span class="keyword" style="font-weight: bold";>Notre mission :</span> <span class="function">Placer les fruits et légumes frais des agriculteurs locaux dans les assiettes des restaurateurs Lillois.</span>';
+    var text = '<span class="keyword" style="font-weight: bold";>Notre mission :</span> <span class="function">Placer les agriculteurs locaux dans les assiettes des restaurateurs Lillois.</span>';
 
     var currentChar = 1;
     var htmltag = false;
