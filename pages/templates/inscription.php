@@ -4,9 +4,8 @@
             <div class="collapsible-header flow-text green darken-3 white-text waves-effect waves-light">
               Inscription
             </div>
-            <div class="collapsible-body">
+            <div class="collapsible-body green darken-1" style="overflow:hidden">
 
-                <form class="col s12" method=post>
                       <div class="row">
   
                         <div class="input-field col s6">
@@ -22,8 +21,7 @@
                           </p>
                         </div>
                         
-
-                        <div id="restau">
+                        <form id="restau" class="col s12" method=post action="controlleurs/inscriptionCtrl.php">
 
                               <div class="input-field col s12">
                                   <input id="nom" name="nom" type="text" class="validate">
@@ -36,7 +34,7 @@
                               </div>
                                         
                               <div class="input-field col s12">
-                                <input id="tel" name="tel" type="number" class="validate">
+                                <input id="tel" name="tel" type="tel" class="validate">
                                 <label for="tel">Tel</label>
                               </div>
                                         
@@ -49,10 +47,12 @@
                                 <input id="mdp" name="mdp" type="text" class="validate">
                                 <label for="mdp">Mot de passe</label>
                               </div>
-                              
-                        </div>
 
-                        <div id="agri">
+                              <input class="large btn-large indigo darken-3" type="submit" value="Ok !" />
+
+                        </form>
+
+                        <form id="agri" class="col s12" method=post action="controlleurs/inscriptionCtrl.php">
 
                               <div class="input-field col s12">
                                   <input id="nom" name="nom" type="text" class="validate">
@@ -79,11 +79,11 @@
                                 <label for="mdp">Mot de passe</label>
                               </div>
 
-                        </div>
+                              <input type="hidden" name="agri" value="aze">
+                              <input class="large btn-large indigo darken-3" type="submit" value="Ok !" />
+                        </form>
 
                       </div>
-                      <input class="large btn-large indigo darken-3" type="submit" value="Ok !" />
-                </form>
 
             </div>
           </li>

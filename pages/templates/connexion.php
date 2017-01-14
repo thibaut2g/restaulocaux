@@ -9,7 +9,7 @@
 		    <li>
 		      <div class="collapsible-header flow-text green darken-3 white-text waves-effect waves-light">Connexion</div>
 		      <div class="collapsible-body">
-			   		<form class="col s12" method="post">
+			   		<form class="col s12" method="post" action="controlleurs/connexionCtrl.php">
 				      <div class="row">
 				        <div class="input-field col s12">
 				          <input id="mail" type="email" class="validate" name="mail">

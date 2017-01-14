@@ -4,13 +4,13 @@
 
    if (isset($_GET['connexion'])) {
             if ($_GET['connexion']=='erreur_connexion') {
-               echo '<p class="flash z-depth-2 flow-text">Mauvais identifiant ou mot de passe</p>';
+               echo '<p class="flash z-depth-2 flow-text red">Mauvais identifiant ou mot de passe</p>';
             }
             elseif ($_GET['connexion']=='erreur_inscription') {
-               echo '<p class="flash z-depth-2 flow-text">Adresse mail déjà existante</p>';
+               echo '<p class="flash z-depth-2 flow-text red">Adresse mail déjà existante</p>';
             }
             elseif ($_GET['connexion']=='erreur_incomplet') {
-               echo '<p class="flash z-depth-2 flow-text">Les données saisies sont incomplètes !</p>';
+               echo '<p class="flash z-depth-2 flow-text red">Les données saisies sont incomplètes !</p>';
             }
    }
  ?>

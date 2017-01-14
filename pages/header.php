@@ -26,15 +26,24 @@
     <div class="nav-wrapper container">
       
       <ul class="right hide-on-med-and-down">
-             <li><a href="accueil.php">Accueil</a></li>  
-              <li><a href="profil.php">Profil</a></li>
+              <?php if (!isset($_SESSION['id']) OR !isset($_SESSION['mail']))
+                         echo '<li><a href="accueil.php">Accueil</a></li>';
+                    if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
+                         echo '<li><a href="profil.php">Profil</a></li>'; ?>
               <li><a href="about.php">A propos</a></li>
+              <?php if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
+                         echo '<li><a href="controlleurs/deconnexionCtrl.php">Deconnexion</a></li>'; ?>
 
       </ul>
 
       <ul class="side-nav">
-              <li><a href="#/profil.php">Profil</a> </li>
-              <li><a href="#/about.php">A propos</a></li>
+              <?php if (!isset($_SESSION['id']) OR !isset($_SESSION['mail']))
+                         echo '<li><a href="accueil.php">Accueil</a></li>';
+                    if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
+                         echo '<li><a href="profil.php">Profil</a></li>'; ?>
+              <li><a href="about.php">A propos</a></li>
+              <?php if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
+                         echo '<li><a href="controlleurs/deconnexionCtrl.php">Deconnexion</a></li>'; ?>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
