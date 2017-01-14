@@ -33,3 +33,11 @@ nav{
 .top4{
   margin-top: 4%;
 }
+
+form{
+	background: #43a047;
+}
+
+footer{
+	margin: 0px !important;
+}

@@ -1,9 +1,8 @@
 <div class="row">
 	<div class="col s12 m6">
-		<?php include 'controlleurs/connexionCtrl.php'  ?>
+		<?php include 'controlleurs/verifCtrl.php'  ?>
     </div>
 </div>
-
 <div class="row">
 	<div class="col s12 l6 center-align">
 		  <ul class="collapsible" data-collapsible="expandable">
@@ -29,4 +28,3 @@
 		    </li>
 		  </ul>	
 	</div>
-</div>
