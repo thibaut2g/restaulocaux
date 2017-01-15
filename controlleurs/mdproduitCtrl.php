@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	require '../modeles/pdo.php';
-	$id = $_GET['produit'];
+	$id = $_POST['produit'];
 	$id_agriculteur = $_SESSION['id'];
 	$nom = htmlspecialchars($_POST['nom']);
 	$quantite = htmlspecialchars($_POST['quantite']);
