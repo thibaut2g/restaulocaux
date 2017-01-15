@@ -13,8 +13,11 @@
 	              					<span class="card-title">'.$a[1].'</span>
 	              					<p>Quantité restante: '.$a[2].' kilo  <br>  Prix: '.$a[3].' € / kilo</p>
 	            				</div>
-	            				<div class="card-action">
-	              					<a href="modifier.php?produit='.$a[0].'">Modifier</a>
+	            				<div class="card-action">	              					
+									<form action="modifier.php" method=post>
+										<input type="hidden" name="produit" value="'.$a[0].'">
+										<input class="btn" type="submit" value="Modifier" />
+									</form>
 					            </div>
 					        </div>
 					    </div>
@@ -25,4 +28,3 @@
 ?>
 <br><br>
 <a href="nouveau.php" class="waves-effect waves-light btn">Ajouter</a>
-	
