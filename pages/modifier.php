@@ -4,11 +4,11 @@
 		<?php include 'modeles/modifier.php'; ?>
 		<div class="row">
 
-			 <form class="col s12" action="controlleurs/mdproduitCtrl.php?produit=<?= $id; ?>" method=post>
+			 <form class="col s12" action="controlleurs/mdproduitCtrl.php" method=post>
 	      		<div class="top"></div>
 				<div class="top"></div>
 				<div class="row">
-				  <h1 class="white-text center z-depth-2">Modifier produit</h1>
+				  <h1 class="white-text center z-depth-2 indigo darken-3">Modifier produit</h1>
 
 				    <div class="input-field col s6">
 				      <input id="nom" type="text" name="nom" value=<?php echo '"'.$resultat['produit'].'"' ?>>
@@ -25,10 +25,13 @@
 				      <label for="prix">Prix au kilo</label>
 				    </div>
 				</div>
+				<input type="hidden" value="<?= $id; ?>">
 				<div class="row">
 					<div>
 	            		<input class="large btn-large" type="submit" value="Modifier" />
+
 				  		<a href="controlleurs/supproduitCtrl.php?supprimer=<?= $id; ?>" class="waves-effect waves-light btn btn-large" onclick="return(confirm('Etes-vous sûr de vouloir supprimer ce produit?'));">Supprimer</a>
+				  		
 				  		<a href="profil.php" class="waves-effect waves-light btn btn-large right">Annuler</a>
 				    </div>
 				</div>
