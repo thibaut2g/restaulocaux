@@ -29,7 +29,12 @@
               <?php if (!isset($_SESSION['id']) OR !isset($_SESSION['mail']))
                          echo '<li><a href="accueil.php">Accueil</a></li>';
                     if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
-                         echo '<li><a href="profil.php">Profil</a></li>'; ?>
+                         echo '<li><a href="profil.php">Profil</a></li>';
+                    if (isset($_SESSION['id']) AND isset($_SESSION['mail'])){
+                        if ($_SESSION['profil']=='restaurant') 
+                          echo '<li><a href="rechercher.php">Rechercher</a></li>';
+                    }  ?>
+                     
               <li><a href="about.php">A propos</a></li>
               <?php if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
                          echo '<li><a href="controlleurs/deconnexionCtrl.php">Deconnexion</a></li>'; ?>
@@ -40,7 +45,11 @@
               <?php if (!isset($_SESSION['id']) OR !isset($_SESSION['mail']))
                          echo '<li><a href="accueil.php">Accueil</a></li>';
                     if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
-                         echo '<li><a href="profil.php">Profil</a></li>'; ?>
+                         echo '<li><a href="profil.php">Profil</a></li>';
+                    if (isset($_SESSION['id']) AND isset($_SESSION['mail'])){
+                        if ($_SESSION['profil']=='restaurant') 
+                          echo '<li><a href="rechercher.php">Rechercher</a></li>';
+                    } ?>
               <li><a href="about.php">A propos</a></li>
               <?php if (isset($_SESSION['id']) AND isset($_SESSION['mail']))
                          echo '<li><a href="controlleurs/deconnexionCtrl.php">Deconnexion</a></li>'; ?>
