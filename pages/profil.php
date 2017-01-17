@@ -9,8 +9,10 @@
 			<h3>Magasin :</h3><hr>
 			<?php include "controlleurs/magasinCtrl.php";
 	    	// magasin;commandes;argent;disponibilité
-	    }else{
-	    	// rechercher_produit;rechercher_magasin;commandes
+	    }else{// rechercher_produit;rechercher_magasin;commandes?>
+	    	<h5>Vos commandes</h5><hr>
+	   <?php
+	   		include 'controlleurs/commandes_restaurantCtrl.php';
 	    }?>
 
 	</div>
